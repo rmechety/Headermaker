@@ -36,4 +36,8 @@ fclean: clean
 
 re: fclean all
 
+add_bin: re
+		sudo cp Headermaker /usr/bin/Headermaker
+
+
 .PHONY: all clean fclean re
