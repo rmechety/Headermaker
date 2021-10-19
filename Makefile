@@ -16,7 +16,7 @@ SRCS = $(SRCSS:src/%.cpp=%.cpp)
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
 
 CC			=	clang++
-CFLAGS      =   -Wall -Wextra -Werror
+CFLAGS      =
 
 all :
 	mkdir -p $(OBJ_DIR)
