@@ -114,16 +114,9 @@ std::string ft_get_all_proto_of_src(std::string dirname)
 			prototypes.append(ft_get_file_prototypes(dirname + "/" + current->d_name) + "\n");
 		}
 
-		if(current->d_type == DT_DIR)
-		{
-			std::cout << current->d_name << std::endl;
-			std::cout << "res = " << std::string(current->d_name).find(".") << std::endl;
-		}
 		if (current->d_type == DT_DIR && std::string(current->d_name) != ".." &&
 			std::string(current->d_name) != "." && std::string(current->d_name).find(".") != 0)
 		{
-						std::cout << "tres sus" << current->d_name << std::endl;
-
 			prototypes.append(ft_get_all_proto_of_src(
 				dirname + "/" + std::string(current->d_name)));
 		}
