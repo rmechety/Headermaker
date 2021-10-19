@@ -1,4 +1,4 @@
-NAME		=	HeaderMaker
+NAME		=	Headermaker
 
 # --   Directory   -- #
 OBJ_DIR     =	objs
