@@ -3,10 +3,10 @@
 
 ## Install:
  ```
- git clone https://github.com/rmechety42/Headermaker.git </br>
-  cd Headermaker </br>
-  make </br>
-  cp Headermaker /usr/bin/Headermaker </br>
+  git clone https://github.com/rmechety42/Headermaker.git
+  cd Headermaker 
+  make
+  cp Headermaker /usr/bin/Headermaker 
 ```
 
 
