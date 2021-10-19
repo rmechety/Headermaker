@@ -5,7 +5,7 @@
  ```
   git clone https://github.com/rmechety42/Headermaker.git
   cd Headermaker
-  make add_bin
+  make install
 ```
 
 

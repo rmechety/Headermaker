@@ -36,7 +36,7 @@ fclean: clean
 
 re: fclean all
 
-add_bin: re
+install: re
 		sudo cp Headermaker /usr/bin/Headermaker
 
 
