@@ -37,8 +37,8 @@ fclean: clean
 re: fclean all
 
 install: re
-		make clean
 		sudo cp Headermaker /usr/bin/Headermaker
+		make fclean
 
 
 .PHONY: all clean fclean re
