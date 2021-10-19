@@ -14,7 +14,7 @@
   Headermaker src_folder_you_want_to_parse header_name_you_want_to_create [-inc nameoftheheaderyouwanttoinclude ....]
 
 ## How to change the 42Header:
-  go to src/main.cpp and look at the to of the file. change the HEADER define.
+  go to src/main.cpp and look at the top of the file. change the HEADER define.
 
 
 
