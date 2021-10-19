@@ -1,7 +1,7 @@
 # Headermaker
 
 
-# Install:
+## Install:
   git clone https://github.com/rmechety42/Headermaker.git
   cd Headermaker
   make
@@ -9,11 +9,11 @@
 
 
 
-# Usage:
+## Usage:
 
   Headermaker srcyouwanttoparse headeryouwanttocreate [-inc nameoftheheaderyouwanttoinclude ....]
  
-# How to change the 42Header:
+## How to change the 42Header:
   go to src/main.cpp and look at the to of the file. change the HEADER define.
   
   
