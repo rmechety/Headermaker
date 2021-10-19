@@ -59,22 +59,16 @@ int ft_is_proto(std::string line)
 std::string ft_get_file_prototypes(std::string srcfilename)
 {
 	std::string prototypes;
-
+	std::string line;
 	std::fstream srcfile;
 
 	srcfile.open(srcfilename, std::fstream::in);
 
-	std::string line;
-	std::string nxtline;
 	while (std::getline(srcfile, line))
 	{
-		std::cout << "line = " + line << std::endl;
 		if (ft_is_proto(line))
-		{
 			prototypes.append(line + ";" + "\n");
-		}
 	}
-
 	return prototypes;
 }
 
