@@ -2,11 +2,12 @@
 
 
 ## Install:
-  git clone https://github.com/rmechety42/Headermaker.git </br>
+ ```
+ git clone https://github.com/rmechety42/Headermaker.git </br>
   cd Headermaker </br>
   make </br>
   cp Headermaker /usr/bin/Headermaker </br>
-
+```
 
 
 ## Usage:
