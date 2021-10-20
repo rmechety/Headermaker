@@ -1,5 +1,15 @@
 NAME		=	Headermaker
 
+
+BIN = /usr/bin/Headermaker
+
+ifeq ($(UNAME), Linux)
+	BIN = /usr/bin/Headermaker
+endif
+ifeq ($(UNAME), Darwin)
+	BIN = /usr/local/bin/Headermaker
+endif
+
 # --   Directory   -- #
 OBJ_DIR     =	objs
 
@@ -37,7 +47,7 @@ fclean: clean
 re: fclean all
 
 install: re
-		sudo cp Headermaker /usr/bin/Headermaker
+		sudo cp Headermaker
 		make fclean
 
 
