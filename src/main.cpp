@@ -170,7 +170,7 @@ int main(int ac, char **av)
 				to_inc = av[i];
 				if (to_inc.find(".h") == to_inc.npos)
 					to_inc.append(".h");
-				header << "#include \"" << to_inc << "\"" << std::endl;
+				header << "# include \"" << to_inc << "\"" << std::endl;
 				i++;
 			}
 
