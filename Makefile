@@ -3,6 +3,8 @@ NAME		=	Headermaker
 
 BIN = /usr/bin/Headermaker
 
+UNAME = $(shell uname)
+
 ifeq ($(UNAME), Linux)
 	BIN = /usr/bin/Headermaker
 endif
@@ -47,7 +49,7 @@ fclean: clean
 re: fclean all
 
 install: re
-		sudo cp Headermaker
+		sudo cp Headermaker $(BIN)
 		make fclean
 
 
