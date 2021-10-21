@@ -11,7 +11,17 @@
 
 ## Usage:
 
-  Headermaker src_folder_you_want_to_parse header_name_you_want_to_create [-inc nameoftheheaderyouwanttoinclude ....]
+  Headermaker src_folder_you_want_to_parse header_name_you_want_to_create [-inc nameoftheheaderyouwanttoinclude ....]</br>
+  A good idea can be to add a rule in your makefile like : </br>
+  ```
+
+all : header
+      dothings
+header :
+	@Headermaker src inc/prototypes.h -inc structs define
+
+```
+Like this you don't have to run the commande every time you want to compile your project
 
 ## How to change the 42Header:
   go to src/main.cpp and look at the top of the file. change the HEADER define.
