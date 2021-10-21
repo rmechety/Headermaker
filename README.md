@@ -21,7 +21,7 @@ header :
 	@Headermaker src inc/prototypes.h -inc structs define
 
 ```
-Like this you don't have to run the commande every time you want to compile your project
+Like this you don't have to run the command every time you want to compile your project
 
 ## How to change the 42Header:
   go to src/main.cpp and look at the top of the file. change the HEADER define.
