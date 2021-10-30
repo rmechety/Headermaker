@@ -23,7 +23,7 @@ SRCSS =	src/main.cpp
 
 SRCS = $(SRCSS:src/%.cpp=%.cpp)
 PWD = $(shell pwd)
-HOME = $(shell $HOME)
+HOME = $(shell echo $HOME)
 
 # --  Redirection in OBJS  -- #
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
