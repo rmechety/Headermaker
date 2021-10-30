@@ -23,7 +23,7 @@ SRCSS =	src/main.cpp
 
 SRCS = $(SRCSS:src/%.cpp=%.cpp)
 PWD = $(shell pwd)
-HOME = $(shell echo $HOME)
+HOME = $(shell echo $${HOME})
 
 # --  Redirection in OBJS  -- #
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
@@ -53,6 +53,6 @@ install: re
 		sudo cp Headermaker $(BIN)
 		make fclean
 installinpath: re		
-		echo "PATH=PATH:"$(PWD) >> $(HOME)/.zshrc
+		@echo "PATH=PATH:"$(PWD) >> $(HOME)/.zshrc
 
 .PHONY: all clean fclean re
