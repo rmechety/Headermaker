@@ -2,14 +2,14 @@
 
 
 ## Install:
-### Install processus if you have the sudo power:
+### Install processus if you HAVE the SUDO power:
  ```
   git clone https://github.com/rmechety42/Headermaker.git
   cd Headermaker
   make install
   cd -
 ```
-### Install processus if you NOT have the sudo power and you have ZSH:
+### Install processus if you NOT HAVE the SUDO power and you have ZSH:
 
 ```
   git clone https://github.com/rmechety42/Headermaker.git
