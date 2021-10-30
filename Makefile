@@ -52,6 +52,6 @@ install: re
 		sudo cp Headermaker $(BIN)
 		make fclean
 installinpath: re		
-		echo "PATH=PATH"$(PWD)
+		echo "PATH=PATH:"$(PWD) >> $HOME/.zshrc
 
 .PHONY: all clean fclean re
