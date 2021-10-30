@@ -22,7 +22,7 @@ SRC_DIR = src
 SRCSS =	src/main.cpp
 
 SRCS = $(SRCSS:src/%.cpp=%.cpp)
-
+PWD = $(shell pwd)
 
 # --  Redirection in OBJS  -- #
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
@@ -51,6 +51,7 @@ re: fclean all
 install: re
 		sudo cp Headermaker $(BIN)
 		make fclean
-
+installinpath: re		
+		echo "PATH=PATH"$(PWD)
 
 .PHONY: all clean fclean re
