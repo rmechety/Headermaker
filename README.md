@@ -7,7 +7,7 @@
   cd Headermaker
   make install
 ```
-If you are at 42 Run in your project term :
+If you are at 42 Run in your project terminal :
 ```
   git clone https://github.com/rmechety42/Headermaker.git
   cd Headermaker
