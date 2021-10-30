@@ -2,17 +2,19 @@
 
 
 ## Install:
+### Install processus if you have the sudo power:
  ```
   git clone https://github.com/rmechety42/Headermaker.git
   cd Headermaker
   make install
+  cd -
 ```
-If you are at 42 Run in your project terminal :
+### Install processus if you NOT have the sudo power and you have ZSH:
+
 ```
   git clone https://github.com/rmechety42/Headermaker.git
   cd Headermaker
-  make
-  export PATH=$PATH":"$(pwd) 
+  make installinpath 
   cd -
 ```
 ## Usage:
