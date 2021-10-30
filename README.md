@@ -7,8 +7,14 @@
   cd Headermaker
   make install
 ```
-
-
+If you are at 42 Run in your project term :
+```
+  git clone https://github.com/rmechety42/Headermaker.git
+  cd Headermaker
+  make
+  export PATH=$PATH":"$(pwd) 
+  cd -
+```
 ## Usage:
 
   Headermaker src_folder_you_want_to_parse header_name_you_want_to_create [-inc nameoftheheaderyouwanttoinclude ....]</br>
