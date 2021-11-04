@@ -73,7 +73,7 @@ std::string ft_get_all_proto_of_src(std::string dirname)
 	while ((current = readdir(dir)) != NULL)
 	{
 
-		if (current->d_type == DT_REG && std::string(current->d_name).find(".c") != std::string(current->d_name).npos)
+		if (current->d_type == DT_REG && std::string(current->d_name).find(".c") != std::string(current->d_name).npos && current->d_name[0] != '.')
 		{
 				prototypes.append("/* "
 						"------------------------------------------------"
