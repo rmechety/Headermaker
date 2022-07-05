@@ -4,7 +4,7 @@
 ## Install:
 ### Install processus if you HAVE the SUDO power:
  ```
-  git clone https://github.com/rmechety42/Headermaker.git
+  git clone https://github.com/rmechety/Headermaker.git
   cd Headermaker
   make install
   cd -
@@ -12,7 +12,7 @@
 ### Install processus if you NOT HAVE the SUDO power and you have ZSH:
 
 ```
-  git clone https://github.com/rmechety42/Headermaker.git
+  git clone https://github.com/rmechety/Headermaker.git
   cd Headermaker
   make installinpath 
   cd -
